@@ -1,0 +1,53 @@
+:root {
+  --color-main-card-light: #E4E4E4;
+  --color-on-main-card-primary-light: #5F5F5F;
+  --color-on-main-card-secondary-light: #A49999;
+  --color-on-main-card-container-light: #C6C6C6;
+
+  --color-surface-light: #565656;
+  --color-on-surface-main-light: #FFFFFF;
+  --color-on-surface-primary-light: #F7F7F7;
+  --color-on-surface-secondary-light: #BBBBBB;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-main-card: var(--color-main-card-light);
+    --color-on-main-card-primary: var(--color-on-main-card-primary-light);
+    --color-on-main-card-secondary: var(--color-on-main-card-secondary-light);
+    --color-on-main-card-container: var(--color-on-main-card-container-light);
+
+    --color-surface: var(--color-surface-light);
+    --color-on-surface-main: var(--color-on-surface-main-light);
+    --color-on-surface-primary: var(--color-on-surface-primary-light);
+    --color-on-surface-secondary: var(--color-on-surface-secondary-light);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  /*  todo */
+  :root {
+    --color-main-card: var(--color-main-card-light);
+    --color-on-main-card-primary: var(--color-on-main-card-primary-light);
+    --color-on-main-card-secondary: var(--color-on-main-card-secondary-light);
+    --color-on-main-card-container: var(--color-on-main-card-container-light);
+
+    --color-surface: var(--color-surface-light);
+    --color-on-surface-main: var(--color-on-surface-main-light);
+    --color-on-surface-primary: var(--color-on-surface-primary-light);
+    --color-on-surface-secondary: var(--color-on-surface-secondary-light);
+  }
+}
+
+
+
+body {
+  min-height: 100vh;
+  background: var(--color-surface);
+  transition: color 0.5s, background-color 0.5s;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
